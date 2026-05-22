@@ -46,7 +46,7 @@ class FileEditItem extends View
 			@getCollectionSelectValues('authors').concat @getOtherSelectValues('author')
 		)
 		$layout.empty().append(
-			@getCollectionSelectValues('layouts').concat @getOtherSelectValues('author')
+			@getCollectionSelectValues('layouts')
 		)
 
 		@point(item:item, itemAttributes:['layout'], element:$layout).bind()
